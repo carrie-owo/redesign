@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Chong Qing House</title>
+        <style>
+            html,
+            body,
+            #app {
+                height: 100%;
+                margin: 0;
+                background-color: black;
+            }
+            #app {
+                display: flex;
+                flex-direction: column;
+                font-family: Georgia;
+                background-color: black;
+                font-size: 1rem;
+            }
+            #top {
+                display: flex;
+            }
+            #brand {
+                padding: 20px;
+                background-color: red;
+                color: white
+            }
+            /*top navigation bar style*/
+            #nav {
+                background-color: black;
+                display: flex;
+                flex: 1;
+            }
+            .nav-item {
+                padding: 20px;
+                color: white;
+            }
+            #nav :hover {
+                background-color: white;
+                color: black;
+            }
+            #main {
+                flex: 1;
+                display: flex;
+                min-height: 1;
+                overflow: hidden;
+            }
+            /*side menu bar style*/
+            #menu {
+                background-color: black;
+                display: flex;
+                width: 205px;
+                flex-direction: column;
+            }
+            .menu-item {
+                padding: 20px;
+                color: white
+            }
+            #menu :hover {
+                background-color: red;
+                color: white;
+            }
+            #menu-item-last {
+                margin-top: auto;
+                color: white
+            }
+            /*dish grid style*/
+            #dish {
+                flex: 2;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: black;
+                overflow: auto;
+            }
+            .dish-item {
+                flex: 1 1 180px;
+            }
+            .dish-text {
+                padding: 8px;
+                text-align: center;
+                font-size: 1vw;
+                color: white;
+            }
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <div id="top">
+                <div id="brand">CHONG QING HOUSE</div>
+                <div id="nav">
+                    <div class="nav-item">ABOUT</div>
+                    <div class="nav-item">NEWS</div>
+                    <div class="nav-item">LOCATION</div>
+                    <div class="nav-item">MENU</div>
+                    <div class="nav-item">CONTACT</div>
+                </div>
+            </div>
+            <div id="main">
+                <div id="menu">
+                    <div class="menu-item">Lunch Special</div>
+                    <div class="menu-item">Appetizers</div>
+                    <div class="menu-item">Soup</div>
+                    <div class="menu-item">Meat</div>
+                    <div class="menu-item">Seafood</div>
+                    <div class="menu-item">Vegetables</div>
+                    <div class="menu-item">Desserts</div>
+                    <div class="menu-item" id="menu-item-last">CART</div>
+                </div>
+                <div id="dish">
+                    <div class="dish-item">
+                        <img src="./pic/1.jpg" />
+                        <div class='dish-text'>+ Wonton Soup $6.99</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/2.jpg" />
+                        <div class='dish-text'>+ Thousand year egg $5.33</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/3.jpg" />
+                        <div class='dish-text'>+ Chili Oil $2.99</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/4.jpg" />
+                        <div class='dish-text'>+ Dan Dan Noodle $8.33</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/5.jpg" />
+                        <div class='dish-text'>+ Dry Pot Cabbage $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/6.jpg" />
+                        <div class='dish-text'>+ Kung Pao Chicken $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/7.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/8.jpg" />
+                        <div class='dish-text'>+ Mapo Tofu with Rice $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/9.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/10.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/11.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/12.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/13.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/14.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/15.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <div class="dish-item">
+                        <img src="./pic/16.jpg" />
+                        <div class='dish-text'>+ Dry Pot Shrimp $11.95</div>
+                    </div>
+                    <!--leave the following intact, if you want to add new item, duplicate the above item instead-->
+                    <div class="dish-item"></div>
+                    <div class="dish-item"></div>
+                    <div class="dish-item"></div>
+                    <div class="dish-item"></div>
+                    <div class="dish-item"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
